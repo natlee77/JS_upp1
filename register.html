@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <script src="https://kit.fontawesome.com/adb01dffce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+     
+    <title>Register</title>
+</head>
+<style>
+    .panel, .flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #d8e7e3;
+    border: solid 1px #747171;
+   
+}
+
+.panel {
+    padding: 5px;
+    display: none;
+} 
+</style>
+<body>
+    
+    <!-- id (detta ska autogenereras och inte anges av användaren)
+         
+         adressinformation (postaddress, postnummer, postort) -->
+
+
+    
+         <div class="my-5">
+            <div class="container">
+               
+                <form id="regform" class="needs-validation" target="_blank"  novalidate autocomplete="off"   method="get" action="/result.html">
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">                           
+                            <input id="fname" type="text" class="form-control"  placeholder="FirstName..." required>
+                           
+                            <div  class="valid-feedback">
+                               looks good!
+                            </div>
+                            <div id="result" style="color: red" class="result" ></div>
+                            <div id="error" style="color: red"></div>
+                        </div>
+                        <div class="col-md-6 mb-3">                           
+                            <input id="lname"  type="text" class="form-control" placeholder="LastName..." required>
+                            <div class="valid-feedback">
+                                looks good!
+                            </div>
+                            <div id="error" style="color: red"></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="email">email</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid email.
+                            </div>
+                            <div id="error" style="color: red"></div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="phone">phone number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="+4612345678"  required>
+                             <!-- pattern="/+[0-9]{11}/" -->
+                            <div  class="invalid-feedback">
+                                Please provide a valid phone number
+                            </div>
+                            <div id="error" style="color: red"></div>
+                        </div>                        
+                    </div>
+
+
+                    <!-- adress -->
+                    <div class=" form-row spacer mt-5">
+                        <div class="col-md-12 mb-3">
+                            <label for="street">Street</label>
+                            <input type="text" class="form-control" id="street" required>
+                            <div  class="invalid-feedback">
+                                Please provide a valid street.
+                            </div>
+                            <div id="firstname-error" style="color: red"></div>
+                            <div id="error" style="color: red"></div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="postcode">Post Code</label>
+                            <input type="text" class="form-control" id="postcode" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                            <div id="error" style="color: red"></div>
+                        </div>
+                        <div class="col-md-8 mb-3">
+                            <label for="city"> City</label>
+                            <input type="text" class="form-control" id="city" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                            <div id="error" style="color: red"></div>
+                        </div>
+                    </div>
+                    
+    
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="toCheck" required >
+                            <label class="form-check-label" for="toCheck">I Agree to terms and conditions.</label>
+                        </div> 
+                    </div>
+
+                    <div>
+                        <button id="btn_submit" class="btn-primary" formaction="/result.html" type="submit">Submit </button>
+                      
+                    </div>               
+                    <span id="text-output"></span>
+                </form>               
+                <!-- _____________slide() -->
+                <div id="persons">
+                    <h1>Persons data</h1>
+                    
+                    <div id="personDiv">
+                        <div id="flip" class="flip"></div>
+                        <div id="panel" class="panel">  </div>
+                    </div>
+                   
+                </div> 
+                    
+                </div> 
+            </div>           
+    
+        </div>
+    
+
+
+    <!-- jq-cdn -->
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script><script type ="module" src="js/script.js"></script>
+</body>
+</html>

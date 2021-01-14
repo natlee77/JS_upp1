@@ -1,0 +1,11 @@
+// override bootstrap
+@import "./variables";
+@import "./utilities";
+
+@import "../../bootstrap-4.5.3/scss/bootstrap.scss";
+@import "./validation";
+
+
+
+
+@import "./result/result";

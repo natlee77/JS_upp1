@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://kit.fontawesome.com/adb01dffce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+     
+    <title>Userdata</title>
+</head>
+<style>
+    .panel, .flip{
+    text-align: center;
+    background-color: #d1e0dd;
+    border: solid 1px #968f8f;
+   
+}
+
+    .panel {
+        padding: 10px;
+        display: none;
+    } 
+</style>
+<body>
+  
+    <div class="container" id="persons">
+        <div id='person'>
+            <fieldset >
+                <details >
+                    <summary  id="flip">Person :</summary>
+                    
+                        <div style="border: 1px solid rgb(81, 67, 143)" id='panel' class="person" >
+                            <!-- <div class="row">
+                                <div>
+                                    <ul>                                      
+                                    </ul>
+                                </div>
+                                <div id="adress">
+                                    <ul>                                     
+                                    </ul>                               
+                                </div> -->
+                            </div>
+                        </div>
+                </details>
+             </fieldset>
+        </div>
+
+          <!-- _____________slide() -->
+            <div id="persons">
+            <h1>Persons data</h1>
+            
+            <div id="personDiv">
+                <div id="flip" class="flip"></div>
+                <div id="panel" class="panel">  </div>
+            </div>
+           
+            </div> 
+            
+
+        
+            <button id="btn_delete">  Delete </button>
+        
+    </div>   
+    
+      
+       
+
+    <!-- <script>
+        let results = document.getElementById("dataresults")
+//hämta ut --window.location.search-- get 
+//for post- andra
+
+        new URLSearchParams(window.location.search).forEach((value, name) => {
+            results.append(`${name}: ${value}`)
+            results.append(document.createElement('br'))
+        })
+    </script> -->
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type ="module" src="js/script.js"></script>
+</body>
+</html>

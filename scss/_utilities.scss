@@ -1,0 +1,15 @@
+.spacer {    
+    border-top: 4px solid $primary;
+}
+.panel, .flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #b9e9de;
+    border: solid 1px #747171;
+   
+}
+
+.panel {
+    padding: 50px;
+    display: none;
+} 
