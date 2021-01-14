@@ -48,10 +48,11 @@ $(document).ready(function() {
         
             //_____________slide()
         $(".flip").click(function(){
-            $(".panel").slideToggle("slow");
-            //$(this).children("#panel").slideToggle("slow");
+            $(".panel").slideToggle("slow");            
         });
 
+
+        
         $('#regform').submit((e) => {
            e.preventDefault();
            let errors = []

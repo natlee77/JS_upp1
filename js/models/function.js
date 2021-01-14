@@ -1,18 +1,4 @@
 
-/* export  function validateInputLength(e) {
-    if(e.target.value.length < 3) {
-      console.log(e.target.value.length)
-        document.getElementById('result').innerText = 'For short text ' + e.target.id
-        document.getElementById('btn_submit').disabled = true
-    }
-    else {
-       document.getElementById('result').innerText = ''
-       //be able press button efter 
-        document.getElementById('btn_submit').disabled = false
-    }
-    
-  
-}  */
 export  function validateInputLength(e) {
   
   if(e.target.value.length < 3) {       
@@ -24,6 +10,8 @@ export  function validateInputLength(e) {
     document.getElementById('btn_submit').disabled = false
   }
 }  
+
+
 export function validateEmail(email) {
     if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(regform.email.value))
   {
